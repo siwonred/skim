@@ -11,5 +11,7 @@ require "skim/version"
 require "skim/rails"
 
 require "sprockets"
+require 'sprockets/engines'
+
 Sprockets::Engines # force autoload
 Sprockets.register_engine ".skim", Skim::Template
